@@ -8,7 +8,7 @@ base:
 prod:
   'role_type:nginx':
     - match: grain
-    - states.nginx.install
+    - states.nginx
     - states.mount
 
 {% endif %}
