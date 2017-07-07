@@ -13,3 +13,7 @@
 
 {# zabbix app variables #}
 {% set zbx_temp_path = 'salt://zabbix/templates/' %}
+
+{# mysql variables #}
+{% set db_root_password = pillar['db_root_password'] %}
+{% set db_root_user = pillar['db_root_password'] %}
