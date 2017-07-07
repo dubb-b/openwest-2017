@@ -5,6 +5,7 @@ mount:
     - user: root
     - template: jinja
 
+{% if not salt['file.directory_exists' ]('/usr/share/nginx/html/repo') %}
 symlink:
   file.symlink:
     - name: /usr/share/nginx/html/repo
@@ -12,3 +13,4 @@ symlink:
     - force: True
     - requires:
       - file: mount
+{% endif %}

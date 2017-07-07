@@ -31,7 +31,6 @@ base.packages:
       - pkg: epel.package
 
 include:
-  - core.sysctl
   - core.selinux
   - core.firewalld
 
