@@ -11,6 +11,10 @@ prod:
     - states.nginx
     - states.mount
 
+  'role_type:squid':
+    - match: grain
+    - states.squid
+
 {% endif %}
 
 {% endif %}

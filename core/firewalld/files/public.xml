@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<zone>
+  <short>Public</short>
+  <description>For use in public areas. You do not trust the other computers on networks to not harm your computer. Only selected incoming connections are accepted.</description>
+  <port protocol="tcp" port="443"/>
+  <port protocol="tcp" port="80"/>
+  <port protocol="tcp" port="25"/>
+  <port protocol="tcp" port="8080"/>
+  <port protocol="tcp" port="4506"/>
+  <port protocol="tcp" port="8081"/>
+  <port protocol="tcp" port="10051"/>
+  <port protocol="tcp" port="4505"/>
+  <port protocol="tcp" port="10050"/>
+  <port protocol="tcp" port="22"/>
+  <port protocol="tcp" port="3128"/>
+</zone>
+
