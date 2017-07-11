@@ -1,0 +1,19 @@
+{# zabbix supported repo variables #}
+{% set zbx_base_url = 'https://repo.zabbix.com/' %}
+{% set zbx_key_name = 'RPM-GPG-KEY-ZABBIX-A14FE591' %}
+{% set zbx_key_path = '/etc/pki/rpm-gpg/' + zbx_key_name %}
+{% set zbx_key_url =  zbx_base_url + zbx_key_name %}
+{% set zbx_repo_url = zbx_base_url + 'zabbix/3.2/rhel/7/$basearch/' %}
+
+{# zabbix un-supported repo variables #}
+{% set zbx_un_key_name = 'RPM-GPG-KEY-ZABBIX' %}
+{% set zbx_un_key_path = '/etc/pki/rpm-gpg/' + zbx_un_key_name %}
+{% set zbx_un_key_url =  zbx_base_url + zbx_un_key_name %}
+{% set zbx_un_repo_url = zbx_base_url + 'non-supported/rhel/7/$basearch/' %}
+
+{# zabbix app variables #}
+{% set zbx_temp_path = 'salt://zabbix/templates/' %}
+
+{# mysql variables #}
+{% set db_root_password = pillar['db_root_password'] %}
+{% set db_root_user = pillar['db_root_password'] %}

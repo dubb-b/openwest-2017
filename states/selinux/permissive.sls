@@ -1,0 +1,2 @@
+permissive:
+    selinux.mode
