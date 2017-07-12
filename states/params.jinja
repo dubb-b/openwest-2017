@@ -17,3 +17,7 @@
 {# mysql variables #}
 {% set db_root_password = pillar['db_root_password'] %}
 {% set db_root_user = pillar['db_root_password'] %}
+
+{# nginx variables #}
+{% set nginx_root = '/usr/share/nginx/html/' %}
+{% set nginx_repo_root = nginx_root + 'repo/openwest-2017/' %}
