@@ -2,7 +2,7 @@
 <zone>
   <short>Public</short>
   <description>For use in public areas. You do not trust the other computers on networks to not harm your computer. Only selected incoming connections are accepted.</description>
-{%- if salt['grains.get']('nodename') == 'monitor01-prod' -%}
+{%- if salt['grains.get']('nodename') == 'monitor-prod' -%}
   <port protocol="tcp" port="443"/>
 {%- endif -%}
 {% if salt['grains.get']('nodename') == 'repo-srv01-prod' -%}
