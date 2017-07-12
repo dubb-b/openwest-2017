@@ -1,4 +1,4 @@
-{% import 'params.jinja' as params %}
+{% import './states/params.jinja' as params %}
 
 zabbix:
   file.managed:

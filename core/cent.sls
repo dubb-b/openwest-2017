@@ -33,5 +33,6 @@ base.packages:
 include:
   - core.selinux
   - core.firewalld
+  - core.auth
 
 

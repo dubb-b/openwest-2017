@@ -1,4 +1,4 @@
-{% import 'params.jinja' as params %}
+{% import './states/params.jinja' as params %}
 
 install_mariadb:
   pkg.installed:
@@ -20,7 +20,7 @@ configure_mariadb:
 
 mysql_root_password:
   cmd.run:
-    - name: mysqladmin --user {{ params.db_root_user }} password '{{ params.db_root_password|replace("'", "'\"'\"'") }}'
-    - unless: mysql --user {{ params.db_root_user }} --password='{{ params.db_root_password|replace("'", "'\"'\"'") }}' --execute="SELECT 1;"
+    - name: mysql -u {{ params.db_root_user }} -p '{{ params.db_root_password }}' -h {{ params.zabbix_db_host }}
+    - unless: mysql --user {{ params.db_root_user }} --password='{{ params.db_root_password  }}' -h {{ params.zabbix_db_host }} --execute="SELECT 1;"
     - require:
       - service: mariadb

@@ -1,10 +1,9 @@
-{% import 'params.jinja' as params %}
+{% import './states/params.jinja' as params %}
 
 include:
-  - selinux.permissive
-  - db.server
-  - httpd.server
-  - zabbix.repo
+  - states.db.server
+  - states.httpd.server
+  - states.zabbix.repo
 
 zabbix_server_packages:
   pkg.installed:
