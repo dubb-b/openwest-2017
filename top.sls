@@ -11,9 +11,9 @@ prod:
     - states.nginx
     - states.mount
 
-  'role_type:squid':
+  'role_type:zabbix':
     - match: grain
-    - states.squid
+    - states.zabbix
 
 {% endif %}
 

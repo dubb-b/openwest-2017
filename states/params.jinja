@@ -12,12 +12,14 @@
 {% set zbx_un_repo_url = zbx_base_url + 'non-supported/rhel/7/$basearch/' %}
 
 {# zabbix app variables #}
-{% set zbx_temp_path = 'salt://zabbix/templates/' %}
+{% set zbx_temp_path = 'salt://states/zabbix/templates/' %}
 
 {# mysql variables #}
 {% set db_root_password = pillar['db_root_password'] %}
-{% set db_root_user = pillar['db_root_password'] %}
+{% set db_root_user = pillar['db_root_user'] %}
+{% set zabbix_db_host = pillar['zabbix_db_host'] %}
 
 {# nginx variables #}
 {% set nginx_root = '/usr/share/nginx/html/' %}
 {% set nginx_repo_root = nginx_root + 'repo/openwest-2017/' %}
+

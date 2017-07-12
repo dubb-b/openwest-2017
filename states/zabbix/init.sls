@@ -1,4 +1,3 @@
 include:
-  - selinux.permissive
-  - zabbix.repo
-  - zabbix.app
+  - states.zabbix.repo
+  - states.zabbix.server
