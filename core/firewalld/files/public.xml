@@ -5,7 +5,7 @@
 {%- if salt['grains.get']('fqdn') == 'monitor01-prod' -%}
   <port protocol="tcp" port="443"/>
 {%- endif -%}
-{%- if salt['grains.get']('fqdn') == 'repo-srv-prod' -%}
+{%- if salt['grains.get']('fqdn') == 'repo-srv01-prod' -%}
   <port protocol="tcp" port="80"/>
 {%- endif -%}
   <port protocol="tcp" port="25"/>
