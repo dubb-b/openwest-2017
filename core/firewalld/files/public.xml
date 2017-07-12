@@ -2,17 +2,16 @@
 <zone>
   <short>Public</short>
   <description>For use in public areas. You do not trust the other computers on networks to not harm your computer. Only selected incoming connections are accepted.</description>
+{%- if salt['grains.get']('fqdn') == 'monitor01-prod' -%}
   <port protocol="tcp" port="443"/>
-{% if not salt['grains.get']('fqdn') == 'monitor-prod' %} 
+{%- endif -%}
+{%- if salt['grains.get']('fqdn') == 'repo-srv-prod' -%}
   <port protocol="tcp" port="80"/>
-{% endif %}
+{%- endif -%}
   <port protocol="tcp" port="25"/>
-  <port protocol="tcp" port="8080"/>
   <port protocol="tcp" port="4506"/>
-  <port protocol="tcp" port="8081"/>
   <port protocol="tcp" port="10051"/>
   <port protocol="tcp" port="4505"/>
   <port protocol="tcp" port="10050"/>
   <port protocol="tcp" port="22"/>
-  <port protocol="tcp" port="3128"/>
 </zone>
