@@ -1,6 +1,6 @@
 {% set oracle_root = 'http://download.oracle.com/otn-pub/java/jdk/8u131-b11/d54c1d3a095b4ff2b6607d096fa80163/' %}
 {% set oracle_root2 = 'http://download.oracle.com/otn-pub/java/jdk/8u131-b11-demos/d54c1d3a095b4ff2b6607d096fa80163/' %}
-{% set studio_root = 'https://dl.google.com/dl/android/studio/install/2.3.3.0/'
+{% set studio_root = 'https://dl.google.com/dl/android/studio/install/2.3.3.0/' %}
 
 artifacts:
   android_sdk:
