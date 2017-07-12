@@ -1,7 +1,7 @@
 {% set oracle_root = 'http://download.oracle.com/otn-pub/java/jdk/8u131-b11/d54c1d3a095b4ff2b6607d096fa80163/' %}
 
 artifacts:
-  android:
+  android_sdk:
     dir: sdk
     urls:
       - {{ oracle_root }}jdk-8u131-linux-arm32-vfp-hflt.tar.gz
