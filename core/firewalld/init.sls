@@ -9,6 +9,7 @@ firewalld:
   file.managed:
     - name: /etc/firewalld/zones/public.xml
     - source: salt://core/firewalld/files/public.xml
+    - template: jinja
     - user: root
     - group: root
     - mode: 644
