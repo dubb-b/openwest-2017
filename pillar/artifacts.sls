@@ -1,4 +1,5 @@
 {% set oracle_root = 'http://download.oracle.com/otn-pub/java/jdk/8u131-b11/d54c1d3a095b4ff2b6607d096fa80163/' %}
+{% set studio_root = 'https://dl.google.com/dl/android/studio/install/2.3.3.0/'
 
 artifacts:
   android_sdk:
@@ -27,3 +28,16 @@ artifacts:
       - {{ oracle_root }}jdk-8u131-solaris-x64-demos.tar.gz
       - {{ oracle_root }}jdk-8u131-windows-i586-demos.zip
       - {{ oracle_root }}jdk-8u131-windows-x64-demos.zip
+  android_studio:
+    dir: studio
+    urls:
+      - {{ studio_root }}android-studio-ide-162.4069837-linux.zip
+      - {{ studio_root }}android-studio-ide-162.4069837-windows.exe
+      - {{ studio_root }}android-studio-ide-162.4069837-windows.zip
+      - {{ studio_root }}android-studio-ide-162.4069837-windows32.zip
+      - {{ studio_root }}android-studio-ide-162.4069837-mac.dmg
+      - {{ studio_root }}android-studio-ide-162.4069837-linux.zip
+  javascript:
+    dir: battmanz_examples
+    urls:
+      - https://github.com/battmanz/functional-javascript-examples/archive/master.zip
