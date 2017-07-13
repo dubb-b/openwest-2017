@@ -46,7 +46,7 @@ artifacts:
   mongodb:
     dir: mongodb_atlas
     urls:
-      - https://www.mongodb.com/dr/fastdl.mongodb.org/win32/mongodb-win32-x86_64-2008plus-ssl-3.4.6-signed.msi/download
+      - http://downloads.mongodb.org/win32/mongodb-win32-x86_64-2008plus-ssl-3.4.6-signed.msi
       - https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-ubuntu1604-3.4.6.tgz
       - https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-rhel70-3.4.6.tgz
       - https://fastdl.mongodb.org/osx/mongodb-osx-ssl-x86_64-3.4.6.tgz
